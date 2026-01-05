@@ -1,0 +1,7 @@
+{
+  "name": "Vitali - Advanced Health Ecosystem",
+  "description": "A high-performance health tracking dashboard with multi-account support, AI-driven nutritional guidance, and detailed biometric visualization.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
