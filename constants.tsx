@@ -23,37 +23,64 @@ export const CustomIcons = {
     </svg>
   ),
   Plus: ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square">
       <line x1="12" y1="5" x2="12" y2="19"></line>
       <line x1="5" y1="12" x2="19" y2="12"></line>
     </svg>
   ),
   Chef: ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2c-4 0-7 3-7 7v1h14V9c0-4-3-7-7-7zM5 11h14v2H5v-2zm2 4v6h10v-6H7z" fill="currentColor" />
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M6 13.847c1.607-1.33 5.113-2.476 5.514-4.638C12.145 5.753 9.421 3.01 6.02 3c-3.411-.01-6.135 2.744-5.514 6.209.4 2.162 3.907 3.307 5.494 4.638"/>
+      <path d="M18 13.847c-1.607-1.33-5.113-2.476-5.514-4.638C11.855 5.753 14.579 3.01 17.98 3c3.411-.01 6.135 2.744 5.514 6.209-.4 2.162 3.907 3.307-5.494 4.638"/>
+      <path d="M12 12v10M8 22h8"/>
     </svg>
   ),
   Message: ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
     </svg>
   ),
   Game: ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <rect x="2" y="6" width="20" height="12" rx="2"></rect>
       <path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"></path>
     </svg>
   ),
   Video: ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-      <path d="M8 21h8M12 17v4"></path>
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M23 7l-7 5 7 5V7z"></path>
+      <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
     </svg>
   ),
   Settings: ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <circle cx="12" cy="12" r="3"></circle>
-      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path>
+    </svg>
+  ),
+  // New Signal icon for professional communication UI
+  Signal: ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2 20h.01" />
+      <path d="M7 20v-4" />
+      <path d="M12 20v-8" />
+      <path d="M17 20V8" />
+      <path d="M22 20V4" />
+    </svg>
+  ),
+  // Fixed: Included color in destructuring to resolve reference errors
+  BioOrganism: ({ className, color }: { className?: string, color?: string }) => (
+    <svg className={className} viewBox="0 0 100 100" fill="none">
+      <path d="M50 20 C60 20, 70 30, 70 50 C70 70, 60 80, 50 80 C40 80, 30 70, 30 50 C30 30, 40 20, 50 20" stroke={color || "#10b981"} strokeWidth="4" />
+      <circle cx="50" cy="50" r="10" fill={color || "#10b981"} />
+      <path d="M40 40 L30 30 M60 40 L70 30 M40 60 L30 70 M60 60 L70 70" stroke={color || "#10b981"} strokeWidth="2" />
+    </svg>
+  ),
+  SyntheticHazard: ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 100 100" fill="none">
+      <rect x="30" y="30" width="40" height="40" stroke="#f43f5e" strokeWidth="4" />
+      <path d="M30 30 L70 70 M70 30 L30 70" stroke="#f43f5e" strokeWidth="4" />
+      <circle cx="50" cy="50" r="5" fill="#f43f5e" />
     </svg>
   )
 };
@@ -62,97 +89,37 @@ export const INITIAL_RECIPES: any[] = [
   {
     id: '1',
     name: 'Quinoa Power Bowl',
-    description: 'A nutrient-dense bowl with avocado, chickpeas, and lemon-tahini dressing.',
+    description: 'Nutrient-dense molecular assembly with high-density protein and healthy lipids.',
     image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
     calories: 450,
     protein: 15,
     carbs: 55,
     fats: 22,
-    ingredients: ['Quinoa', 'Avocado', 'Chickpeas', 'Spinach', 'Tahini'],
-    instructions: ['Cook quinoa.', 'Slice avocado.', 'Mix everything in a bowl.']
+    ingredients: ['Refined Quinoa', 'Pressed Avocado', 'Cultured Chickpeas', 'Organic Spinach', 'Tahini Emulsion'],
+    instructions: ['Prepare base quinoa unit.', 'Integrate lipid-rich avocado.', 'Emulsify with tahini dressing.']
   },
   {
     id: '2',
-    name: 'Steamed Salmon with Asparagus',
-    description: 'High protein, low carb meal rich in Omega-3 fatty acids.',
+    name: 'Atlantic Salmon Reconstruction',
+    description: 'Wild-caught protein source optimized for cognitive and cardiac performance.',
     image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=80&w=800',
     calories: 380,
     protein: 34,
     carbs: 10,
     fats: 18,
-    ingredients: ['Salmon Fillet', 'Asparagus', 'Lemon', 'Garlic', 'Olive Oil'],
-    instructions: ['Season salmon.', 'Steam with asparagus for 12 minutes.', 'Garnish with lemon.']
+    ingredients: ['Prime Salmon', 'Hydro-Asparagus', 'Citric Essence', 'Garlic Infusion', 'Lipid Oil'],
+    instructions: ['Apply thermal treatment to salmon.', 'Steam hydration for asparagus.', 'Infuse with garlic and lemon.']
   },
   {
     id: '3',
-    name: 'Berry Spinach Smoothie',
-    description: 'A refreshing morning boost packed with antioxidants.',
+    name: 'Antioxidant Neural Boost',
+    description: 'High-speed absorption blend for cellular recovery and oxidative stress management.',
     image: 'https://images.unsplash.com/photo-1553531384-397c80973a0b?auto=format&fit=crop&q=80&w=800',
     calories: 220,
     protein: 8,
     carbs: 35,
     fats: 4,
-    ingredients: ['Spinach', 'Blueberries', 'Almond Milk', 'Greek Yogurt'],
-    instructions: ['Blend all ingredients until smooth.']
-  },
-  {
-    id: '4',
-    name: 'Zucchini Noodles with Pesto',
-    description: 'A light, low-carb alternative to traditional pasta.',
-    image: 'https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?auto=format&fit=crop&q=80&w=800',
-    calories: 210,
-    protein: 6,
-    carbs: 15,
-    fats: 14,
-    ingredients: ['Zucchini', 'Basil Pesto', 'Cherry Tomatoes', 'Pine Nuts'],
-    instructions: ['Spiralize zucchini.', 'Toss with pesto.', 'Add tomatoes and nuts.']
-  },
-  {
-    id: '5',
-    name: 'Mediterranean Stuffed Peppers',
-    description: 'Bell peppers filled with a mixture of brown rice, feta, and olives.',
-    image: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&q=80&w=800',
-    calories: 320,
-    protein: 12,
-    carbs: 45,
-    fats: 10,
-    ingredients: ['Bell Peppers', 'Brown Rice', 'Feta Cheese', 'Kalamata Olives'],
-    instructions: ['Roast peppers.', 'Stuff with cooked rice mix.', 'Bake for 15 mins.']
-  },
-  {
-    id: '6',
-    name: 'Lentil & Sweet Potato Stew',
-    description: 'Warm, filling, and packed with fiber and plant-based protein.',
-    image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800',
-    calories: 290,
-    protein: 18,
-    carbs: 50,
-    fats: 5,
-    ingredients: ['Red Lentils', 'Sweet Potato', 'Turmeric', 'Coconut Milk', 'Kale'],
-    instructions: ['Sauté sweet potato.', 'Add lentils and spices.', 'Simmer with coconut milk until tender.']
-  },
-  {
-    id: '7',
-    name: 'Grilled Tofu Buddha Bowl',
-    description: 'Smoky grilled tofu with pickled ginger and edamame.',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800',
-    calories: 340,
-    protein: 22,
-    carbs: 30,
-    fats: 12,
-    ingredients: ['Firm Tofu', 'Edamame', 'Brown Rice', 'Ginger', 'Cucumber'],
-    instructions: ['Press and grill tofu.', 'Assemble with cooked rice and fresh veg.', 'Drizzle with soy-sesame dressing.']
-  },
-  {
-    id: '8',
-    name: 'Chia Seed Overnight Pudding',
-    description: 'Simple prep for a high-omega breakfast or snack.',
-    image: 'https://images.unsplash.com/photo-1512484776495-a09d92e87c3b?auto=format&fit=crop&q=80&w=800',
-    calories: 180,
-    protein: 6,
-    carbs: 22,
-    fats: 9,
-    ingredients: ['Chia Seeds', 'Oat Milk', 'Maple Syrup', 'Walnuts', 'Strawberries'],
-    instructions: ['Mix seeds and milk.', 'Let sit overnight.', 'Top with nuts and berries.']
+    ingredients: ['Flash-Frozen Spinach', 'Anthocyanin Berries', 'Almond Hydration', 'Probiotic Yogurt'],
+    instructions: ['High-velocity blending until molecular uniformity is achieved.']
   }
 ];

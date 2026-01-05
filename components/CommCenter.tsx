@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { UserAccount, ChatMessage } from '../types';
+import { CustomIcons } from '../constants';
 
 interface CommCenterProps {
   user: UserAccount;
@@ -32,7 +33,7 @@ const CommCenter: React.FC<CommCenterProps> = ({ user, messages, onSendMessage }
             type="text" 
             value={activeCode}
             onChange={e => setActiveCode(e.target.value.toUpperCase())}
-            className="bg-slate-900 border border-slate-800 rounded-lg px-3 py-1 text-xs text-emerald-400 font-mono outline-none focus:border-emerald-500"
+            className="bg-slate-950 border border-slate-800 rounded-lg px-3 py-1 text-xs text-emerald-400 font-mono outline-none focus:border-emerald-500"
             placeholder="SYNC CODE"
           />
         </div>
@@ -41,9 +42,9 @@ const CommCenter: React.FC<CommCenterProps> = ({ user, messages, onSendMessage }
       <div className="flex-1 glass rounded-3xl flex flex-col overflow-hidden border-emerald-500/10">
         <div className="flex-1 p-6 overflow-y-auto space-y-4">
           {filteredMessages.length === 0 && (
-            <div className="h-full flex flex-col items-center justify-center opacity-20 grayscale">
-               <div className="text-4xl">📡</div>
-               <p className="text-xs uppercase tracking-[0.3em] font-black mt-4">Static signal detected...</p>
+            <div className="h-full flex flex-col items-center justify-center opacity-10">
+               <CustomIcons.Signal className="w-16 h-16 text-slate-500" />
+               <p className="text-[10px] uppercase tracking-[0.4em] font-black mt-6 text-slate-500">Awaiting Signal Link...</p>
             </div>
           )}
           {filteredMessages.map((msg) => (

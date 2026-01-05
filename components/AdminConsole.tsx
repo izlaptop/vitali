@@ -11,7 +11,8 @@ const AdminConsole: React.FC<AdminConsoleProps> = ({ accounts, onUpdateAccounts 
   const [editingAcc, setEditingAcc] = useState<UserAccount | null>(null);
 
   const deleteAccount = (id: string) => {
-    if (id === 'admin-0') return;
+    // Protect the core system identity from accidental deletion
+    if (id === 'system-root') return;
     if (window.confirm("ARE YOU SURE YOU WANT TO PURGE THIS DATA PACKET?")) {
       onUpdateAccounts(accounts.filter(a => a.id !== id));
     }
@@ -82,7 +83,7 @@ const AdminConsole: React.FC<AdminConsoleProps> = ({ accounts, onUpdateAccounts 
                     >
                       MODIFY
                     </button>
-                    {acc.id !== 'admin-0' && (
+                    {acc.id !== 'system-root' && (
                       <button 
                         onClick={() => deleteAccount(acc.id)}
                         className="text-rose-500 hover:text-rose-400 font-black tracking-widest transition-colors"

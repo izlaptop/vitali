@@ -1,7 +1,8 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+// Initializing with direct reference to process.env.API_KEY as per coding guidelines.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const getHealthAdvice = async (userStats: any, question: string) => {
   try {

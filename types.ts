@@ -49,6 +49,7 @@ export interface UserAccount {
   preferences: string[];
   videos: VideoEntry[];
   role: 'user' | 'admin';
+  lastAccess?: number;
 }
 
 export type AppView = 'dashboard' | 'recipes' | 'coach' | 'comm' | 'games' | 'vault' | 'admin';
